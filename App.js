@@ -34,10 +34,12 @@ const App = (props) => {
                   'button15', 'button16', 'button17', 'button18',
                   'button19', 'button20', 'button21'];
 
+                  let randomNum = 10 + Math.floor(40 * Math.random());
+
   return(
     <View style={styles.container}>
         <Header title="Shopping List"/>
-        <Body pd={myArray} />
+        <Body pd={myArray + randomNum} />
        <Footer myBtn={myButtonArray}/>
     </View>
   );
